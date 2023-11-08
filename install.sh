@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./vars # import relevant envrionment variables from file
+source /tmp/bds-utils/vars # import relevant envrionment variables from file
 sudo -i -u $USER bash << EOF # run the next block of commands as super user
 
 # move minecraft executable
