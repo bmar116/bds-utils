@@ -16,5 +16,6 @@ EOF
 # export script directory enviroment variable for minecraft executable
 # run update script to install server software
 mv ./scripts/* ${SERVER_ROOT}/${SCRIPT_DIR}
-export MINECRAFT_SCRIPT_DIR=${SERVER_ROOT}/${SCRIPT_DIR}
+MINECRAFT_SCRIPT_DIR=${SERVER_ROOT}/${SCRIPT_DIR}
+export MINECRAFT_SCRIPT_DIR
 bash ${SERVER_ROOT}/${SCRIPT_DIR}/update.sh
