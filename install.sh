@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 source $PWD/scripts/vars # import relevant envrionment variables from file
-sudo -i -u $USER bash << EOF # run the next block of commands as super user
+sudo -i -u root bash << EOF # run the next block of commands as super user
 
 # move minecraft executable
 # make relevant directories & set ownnership
