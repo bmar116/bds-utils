@@ -28,32 +28,32 @@ Below is a list of all of the used variables:
 
 **Ubuntu/Debian-Based Systems**:
 ```
-\# apt-get install -y screen wget unzip
+# apt-get install -y screen wget unzip
 ```
 
 **Arch-Based Systems**:
 ```
-\# pacman -Syyu screen wget unzip
+# pacman -Syyu screen wget unzip
 ```
 
 **Fedora**:
 ```
-\# dnf install screen wget unzip
+# dnf install screen wget unzip
 ```
 
 **CentOS/RHEL**:
 ```
-\# yum install screen wget unzip
+# yum install screen wget unzip
 ```
 
 **OpenSUSE**:
 ```
-\# zypper install screen wget unzip
+# zypper install screen wget unzip
 ```
 
 **Gentoo**:
 ```
-\# emerge --ask screen wget unzip
+# emerge --ask screen wget unzip
 ```
 
 ### Download
