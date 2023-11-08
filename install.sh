@@ -18,4 +18,7 @@ EOF
 mv ./scripts/* ${SERVER_ROOT}/${SCRIPT_DIR}
 MINECRAFT_SCRIPT_DIR=${SERVER_ROOT}/${SCRIPT_DIR}
 export MINECRAFT_SCRIPT_DIR
-bash ${SERVER_ROOT}/${SCRIPT_DIR}/update.sh
+wget -O /tmp/bedrock_server-latest.zip ${BDS_LATEST_VERSION} && unzip -d ${SERVER_ROOT}/${SERVER_DIR}/ /tmp/bedrock_server-latest.zip
+rm /tmp/bedrock_server-latest.zip
+minecraft start
+minecraft login
