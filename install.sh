@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-source /tmp/bds-utils/vars # import relevant envrionment variables from file
+source $PWD/scripts/vars # import relevant envrionment variables from file
 sudo -i -u $USER bash << EOF # run the next block of commands as super user
 
 # move minecraft executable
 # make relevant directories & set ownnership
-mv ./minecraft /usr/local/bin/
+mv $PWD/minecraft /usr/local/bin/
 chmod +x /usr/local/bin/minecraft
 mkdir ${SERVER_ROOT} && cd ${SERVER_ROOT}
 mkdir ${SERVER_DIR} ${SCRIPT_DIR} ${BACKUP_DIR} ${LOG_DIR}
