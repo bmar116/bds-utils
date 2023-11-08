@@ -26,22 +26,42 @@ Below is a list of all of the used variables:
 ### Dependencies
 `screen`, `wget` and `unzip` are required to run this software.
 
-**Ubuntu/Debian-Based Systems**: ```# apt-get install -y screen wget unzip```
+**Ubuntu/Debian-Based Systems**:
+```
+\# apt-get install -y screen wget unzip
+```
 
-**Arch-Based Systems**: ```# pacman -Syyu screen wget unzip```
+**Arch-Based Systems**:
+```
+\# pacman -Syyu screen wget unzip
+```
 
-**Fedora**: ```# dnf install screen wget unzip```
+**Fedora**:
+```
+\# dnf install screen wget unzip
+```
 
-**CentOS/RHEL**: ```# yum install screen wget unzip```
+**CentOS/RHEL**:
+```
+\# yum install screen wget unzip
+```
 
-**OpenSUSE**: ```# zypper install screen wget unzip```
+**OpenSUSE**:
+```
+\# zypper install screen wget unzip
+```
 
-**Gentoo**: ```# emerge --ask screen wget unzip```
+**Gentoo**:
+```
+\# emerge --ask screen wget unzip
+```
 
 ### Download
 You can manually download the latest release `.zip` file, extract, and run the `install.sh` file, or run the follwing easy-to-read command in your favorite shell:
 
-```wget -O /tmp/bds-utils.zip https://github.com/bmar116/bds-utils/releases/download/latest/bds-utils.zip && unzip -d /tmp/bds-utils /tmp/bds-utils.zip && cd /tmp/bds-utils && bash install.sh```
+```
+wget -O /tmp/bds-utils.zip https://github.com/bmar116/bds-utils/releases/download/latest/bds-utils.zip && unzip -d /tmp/bds-utils /tmp/bds-utils.zip && cd /tmp/bds-utils && bash install.sh
+```
 
 ### After Installation
 Before running the `minecraft` command from your console, make sure the `MINECRAFT_SCRIPT_DIR` environment variable is set to the appropriate directory. By default, it is set to `/srv/minecraft/scripts`.
@@ -51,4 +71,6 @@ Before running the `minecraft` command from your console, make sure the `MINECRA
 ### Usage
 Now that the software has been installed, you can use the utility with the following command:
 
-```Usage: minecraft \<start|backup|login|update\>```
+```
+Usage: minecraft <start|backup|login|update>
+```
