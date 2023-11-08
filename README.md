@@ -47,3 +47,8 @@ You can manually download the latest release `.zip` file, extract, and run the `
 Before running the `minecraft` command from your console, make sure the `MINECRAFT_SCRIPT_DIR` environment variable is set to the appropriate directory. By default, it is set to `/srv/minecraft/scripts`.
 
 **Note:** This environment variable is not persistent and must be set on each startup. Add to your `~/.profile` or `/etc/environment` to make this variable persistent.
+
+### Usage
+Now that the software has been installed, you can use the utility with the following command:
+
+``Usage: minecraft \<start|backup|login|update\>``
