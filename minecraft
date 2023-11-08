@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+SCRIPT_DIR=/srv/minecraft/scripts
+source ${SCRIPT_DIR}/vars
+cd ${SERVER_DIR}
+if [ "$1" == "start" ]; then
+  if ! screen -list | grep -q ${SCREEN_NAME}; then
+    echo "Starting Minecraft Bedrock Dedicated Server..."
+    screen -L -Logfile ${LOG_DIR}/latest.log -dmS ${SCREEN_NAME} bash ${SCRIPT_DIR}/start.sh ${SCRIPT_DIR}
+  else
+    echo "There is an instance of Minecraft Bedrock Dedicated Server already running."
+  fi
+  echo "Open console by using 'minecraft login'"
+elif [ "$1" == "update" ]; then
+  bash ${SCRIPT_DIR}/update.sh ${SCRIPT_DIR}
+elif [ "$1" == "backup" ]; then
+  bash ${SCRIPT_DIR}/backup.sh ${SCRIPT_DIR}
+elif [ "$1" == "login" ]; then
+  screen -Dr ${SCREEN_NAME}
+else
+  echo "Usage: minecraft <start|update|backup|login>"
+fi
