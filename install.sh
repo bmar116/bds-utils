@@ -6,8 +6,11 @@ sudo -i -u root bash << EOF # run the next block of commands as super user
 # make relevant directories & set ownnership
 mv $PWD/minecraft /usr/local/bin/
 chmod +x /usr/local/bin/minecraft
-mkdir ${SERVER_ROOT} && cd ${SERVER_ROOT}
-mkdir ${SERVER_DIR} ${SCRIPT_DIR} ${BACKUP_DIR} ${LOG_DIR}
+if [ ! -d ${SERVER_ROOT} ]; then mkdir ${SERVER_ROOT} && cd ${SERVER_ROOT}; fi
+if [ ! -d ${SERVER_DIR} ]; then mkdir ${SERVER_DIR}; fi
+if [ ! -d ${SCRIPT_DIR} ]; then mkdir ${SCRIPT_DIR}; fi
+if [ ! -d ${LOG_DIR} ]; then mkdir ${LOG_DIR}; fi
+if [ ! -d ${BACKUP_DIR} ]; then mkdir ${BACKUP_DIR}; fi
 chown -R $USER ${SERVER_ROOT}
 
 EOF
