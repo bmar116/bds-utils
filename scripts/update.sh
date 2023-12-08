@@ -21,7 +21,7 @@ rm -r /tmp/bedrock_server /tmp/bedrock_server-latest.zip
 # download latest scripts into tmp directory, unzip and copy into directory
 echo "Updating BDS-Utils Scripts..."
 wget -O /tmp/bds-utils_scripts-only.zip https://github.com/bmar116/bds-utils/releases/latest/download/bds-utils_scripts-only.zip && unzip -d /tmp/bds-utils_scripts-only/ /tmp/bds-utils_scripts-only.zip
-cp -r /tmp/bds-utils_scripts-only/* ${SERVER_ROOT}/${SERVER_DIR}/${SCRIPT_DIR}/
+cp -r /tmp/bds-utils_scripts-only/* ${SERVER_ROOT}/${SCRIPT_DIR}/
 rm -r /tmp/bds-utils_scripts-only/ /tmp/bds-utils_scripts-only.zip
 
 # restart server software
