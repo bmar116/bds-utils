@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 source ${MINECRAFT_SCRIPT_DIR}/vars # import relevant environment variables from file
+BDS_LATEST_VERSION="`wget -qO- https://raw.githubusercontent.com/bmar116/bds-latest-version/master/latest`"
 
 # stop server if running
 # TODO: Currently manual Ctrl-C is required to stop server keep-alive loop.

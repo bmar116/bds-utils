@@ -3,6 +3,5 @@ SERVER_DIR=bedrock_server
 SCRIPT_DIR=scripts
 BACKUP_DIR=backups
 LOG_DIR=logs
-BDS_LATEST_VERSION="`wget -qO- https://raw.githubusercontent.com/bmar116/bds-latest-version/master/latest`"
 WORLD_NAME="Bedrock level"
 SCREEN_NAME=MinecraftServer
