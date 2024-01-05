@@ -23,6 +23,7 @@ MINECRAFT_SCRIPT_DIR=${SERVER_ROOT}/${SCRIPT_DIR}
 export MINECRAFT_SCRIPT_DIR
 echo "MINECRAFT_SCRIPT_DIR=${MINECRAFT_SCRIPT_DIR}" >> ~/.bashrc
 echo "export MINECRAFT_SCRIPT_DIR" >> ~/.bashrc
+BDS_LATEST_VERSION="`wget -qO- https://raw.githubusercontent.com/bmar116/bds-latest-version/master/latest`"
 wget -O /tmp/bedrock_server-latest.zip ${BDS_LATEST_VERSION} && unzip -d ${SERVER_ROOT}/${SERVER_DIR}/ /tmp/bedrock_server-latest.zip
 cd ~
 rm -r /tmp/bds-utils /tmp/bds-utils.zip /tmp/bedrock_server-latest.zip

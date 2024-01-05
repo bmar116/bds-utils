@@ -10,3 +10,4 @@ while true; do # infinite repeating loop keeps server unlive unless killed
   sleep 5
   clear
 done
+

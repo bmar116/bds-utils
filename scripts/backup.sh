@@ -17,3 +17,4 @@ echo Finished backing up worlds/${WORLD_NAME}. Backup file can be found at ${SER
 if screen -list | grep -q ${SCREEN_NAME}; then
   screen -S ${SCREEN_NAME} -X stuff "save resume\n"
 fi
+
