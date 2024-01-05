@@ -22,7 +22,7 @@ if [ ! -d ${SERVER_DIR} ]; then mkdir ${SERVER_DIR}; fi
 if [ ! -d ${SCRIPT_DIR} ]; then mkdir ${SCRIPT_DIR}; fi
 if [ ! -d ${LOG_DIR} ]; then mkdir ${LOG_DIR}; fi
 if [ ! -d ${BACKUP_DIR} ]; then mkdir ${BACKUP_DIR}; fi
-chown -R $(who am i | awk '{print $1}') ${SERVER_ROOT}
+chown -R ${CURRENT_USER} ${SERVER_ROOT}
 
 # move scripts to relevant directories
 # export script directory enviroment variable for minecraft executable
