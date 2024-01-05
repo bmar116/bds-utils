@@ -7,6 +7,8 @@ fi
 echo "Please make sure you have set your directories in the vars file before continuing."
 read -p "Press enter to continue. Ctrl-C to exit."
 
+wget -qO /tmp/bds-utils.zip https://github.com/bmar116/bds-utils/releases/latest/download/bds-utils.zip && unzip -d /tmp/bds-utils /tmp/bds-utils.zip && cd /tmp/bds-utils
+
 source $PWD/scripts/vars # import relevant envrionment variables from file
 CURRENT_USER="`who am i | awk '{print $1}'`"
 MINECRAFT_SCRIPT_DIR=${SERVER_ROOT}/${SCRIPT_DIR}
