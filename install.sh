@@ -30,4 +30,4 @@ chown -R $(who am i | awk '{print $1}') ${SERVER_ROOT}
 mv $PWD/scripts/* ${SERVER_ROOT}/${SCRIPT_DIR}
 export MINECRAFT_SCRIPT_DIR
 grep -qxF "MINECRAFT_SCRIPT_DIR=${MINECRAFT_SCRIPT_DIR}" /home/${CURRENT_USER}/.bashrc || printf "MINECRAFT_SCRIPT_DIR=${MINECRAFT_SCRIPT_DIR}\nexport MINECRAFT_SCRIPT_DIR\n" >> /home/${CURRENT_USER}/.bashrc
-bash ${MINECRAFT_SCRIPT_DIR}/update.sh
+bash ${MINECRAFT_SCRIPT_DIR}/update.sh true

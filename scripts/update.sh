@@ -21,9 +21,9 @@ rm -r /tmp/bedrock_server /tmp/bedrock_server-latest.zip
 # download latest scripts into tmp directory, unzip and copy into directory
 if [ ! $1 ]; then
 	echo "Updating BDS-Utils Scripts..."
-	wget -O /tmp/bds-utils_scripts-only.zip https://github.com/bmar116/bds-utils/releases/latest/download/bds-utils_scripts-only.zip && unzip -d /tmp/bds-utils_scripts-only/ /tmp/bds-utils_scripts-only.zip
-	cp -r /tmp/bds-utils_scripts-only/* ${SERVER_ROOT}/${SCRIPT_DIR}/
-	rm -r /tmp/bds-utils_scripts-only/ /tmp/bds-utils_scripts-only.zip
+	wget -qO /tmp/bds-utils.zip https://github.com/bmar116/bds-utils/releases/latest/download/bss-utils.zip && unzip -d /tmp/bds-utils/ /tmp/bds-utils.zip
+	cp -r /tmp/bds-utils/scripts/* ${MINECRAFT_SCRIPT_DIR}/
+	rm -r /tmp/bds-utils/ /tmp/bds-utils.zip
 fi
 
 # restart server software
