@@ -60,7 +60,7 @@ Below is a list of all of the used variables:
 You can manually download the latest release `.zip` file, extract, and run the `install.sh` file, or run the follwing easy-to-read command in your favorite shell:
 
 ```
-wget -qO- https://raw.githubusercontent.com/bmar116/bds-utils/master/install.sh | sudo bash
+wget -q https://raw.githubusercontent.com/bmar116/bds-utils/master/install.sh | sudo bash ./install.sh
 ```
 
 ### After Installation

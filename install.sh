@@ -16,7 +16,7 @@ MINECRAFT_SCRIPT_DIR=${SERVER_ROOT}/${SCRIPT_DIR}
 # move minecraft executable
 # make relevant directories & set ownnership
 mv $PWD/minecraft /usr/local/bin
-chmod +x /usr/local/bin
+chmod +x /usr/local/bin/minecraft
 if [ ! -d ${SERVER_ROOT} ]; then mkdir ${SERVER_ROOT} && cd ${SERVER_ROOT}; fi
 if [ ! -d ${SERVER_DIR} ]; then mkdir ${SERVER_DIR}; fi
 if [ ! -d ${SCRIPT_DIR} ]; then mkdir ${SCRIPT_DIR}; fi
